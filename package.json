@@ -1,9 +1,9 @@
 {
-  "name": "nat-vue-search",
-  "version": "1.0.2",
-  "author": "ZhangxxEye",
+  "name": "vue-select-address",
+  "version": "1.0.0",
+  "author": "yaoxc",
   "license": "MIT",
-  "description": "a input for searching",
+  "description": "this is a select-address",
   "homepage": "",
   "private": false,
   "keywords": [
@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:ZhangxxEye/vue-search.git"
+    "url": "https://github.com/feixueyao/vue-select-address.git"
   },
   "main": "dist/vue-search.js",
   "scripts": {

@@ -1,24 +1,39 @@
 <template lang="html">
     <div id="project-features">
-        <h1 class="title">Vue 搜索框</h1>
+        <h1 class="title">新增地址</h1>
         <div class="features">
-            <search v-model="searchText"></search>
-            <p>{{searchText}}</p>
+            <address-sec @choosePro="gotPro" @chooseCity="gotCity" @chooseTown="gotTown" > </address-sec>
+            <p >{{address}}</p>
         </div>
     </div>
 </template>
 
 <script>
-    import search from 'vue-search';
+    import addressSec from '../../search/address'
 
     export default {
         name: 'ProjectFeatures',
         components: {
-            search
+            addressSec
         },
         data() {
             return {
-                searchText: ''
+                address:''
+            }
+        },
+        methods:{
+            gotPro(path){
+                this.address=''
+                console.log(path)
+               this.address+=path
+            },
+            gotCity(path){
+                console.log(path)
+               this.address+=path
+            },
+            gotTown(path){
+                console.log(path)
+               this.address+=path
             }
         }
     };
@@ -74,6 +89,10 @@
             fill: #b7c4c9;
         }
     }
+    .features p{
+        margin-top: 10px;
+        font-size: 13px;
+    }
 </style>
 
 <style lang="scss" scoped>
@@ -84,7 +103,7 @@
         font-size: 23px;
         font-weight: bold;
         font-family: 'Raleway', sans-serif;
-        color: #fff;
+        color: #333;
         margin-bottom: 20px
     }
 

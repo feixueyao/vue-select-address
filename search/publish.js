@@ -1,4 +1,4 @@
-import VueSearch from './index';
+import VueSearch from './address';
 
 // add autoinstall support if the component is attached to the windows object e.g. if added by CDN
 VueSearch.install = Vue => Vue.component(VueSearch.name, VueSearch);
