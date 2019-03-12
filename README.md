@@ -1,5 +1,7 @@
 # vue-search
 用于选择地址的组件
+截图：
+
 ## install
 NPM
 ```
