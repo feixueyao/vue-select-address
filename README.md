@@ -1,7 +1,7 @@
 # vue-search
 用于选择地址的组件
 截图：
-![Image text](https://github.com/feixueyao/vue-select-address/blob/master/docs/assets/img/component.png)
+![Image text](https://raw.githubusercontent.com/feixueyao/vue-select-address/master/docs/assets/img/component.png)
 
 ## install
 NPM
